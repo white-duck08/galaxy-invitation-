@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galaxy Farewell Photoshoot Invitation</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Orbitron', sans-serif;
             background: url('collage.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
@@ -17,6 +18,7 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            overflow: hidden;
         }
         @media (max-width: 768px) {
             body {
@@ -30,38 +32,54 @@
         .container {
             width: 90%;
             max-width: 600px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 15px;
-            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            box-shadow: 0px 0px 30px rgba(173, 216, 230, 0.8);
         }
         h1 {
-            font-size: 2.5em;
-            text-shadow: 0px 0px 20px cyan, 0px 0px 40px magenta;
+            font-size: 3em;
+            text-shadow: 0px 0px 25px cyan, 0px 0px 45px magenta;
             animation: glow 2s infinite alternate;
         }
         @keyframes glow {
-            from { text-shadow: 0px 0px 15px cyan, 0px 0px 30px magenta; }
-            to { text-shadow: 0px 0px 30px cyan, 0px 0px 50px magenta; }
+            from { text-shadow: 0px 0px 20px cyan, 0px 0px 35px magenta; }
+            to { text-shadow: 0px 0px 40px cyan, 0px 0px 60px magenta; }
         }
         p {
-            font-size: 1.2em;
+            font-size: 1.3em;
             margin: 15px 0;
-            text-shadow: 0px 0px 15px yellow;
+            text-shadow: 0px 0px 20px yellow;
         }
         #countdown {
-            font-size: 1.5em;
+            font-size: 1.8em;
             margin-top: 20px;
             font-weight: bold;
-            text-shadow: 0px 0px 15px yellow;
+            text-shadow: 0px 0px 20px yellow;
+        }
+        .stars {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: url('https://i.imgur.com/4bJzScF.png') repeat;
+            animation: moveStars 50s linear infinite;
+        }
+        @keyframes moveStars {
+            from { background-position: 0 0; }
+            to { background-position: 1000px 1000px; }
         }
     </style>
 </head>
 <body>
+    <div class="stars"></div>
     <div class="container">
         <h1>🚀 Galaxy Farewell Photoshoot 🚀</h1>
-        <p>Dear Mechanical Engineers 2K25,</p>
-        <p>Join us for an unforgettable photoshoot under the cosmic sky and capture the final moments of our stellar journey!</p>
+        <p>Dear Friends & Juniors,</p>
+        <p>The journey has been long, filled with memories and laughter, but it's time to capture our final moments together! 🎓✨</p>
+        <p>Join me for a special farewell photoshoot as we celebrate the years gone by and step into a new journey. Let’s make this moment unforgettable! 📸💫</p>
         <p><b>Date:</b> March 29, 2025 <br><b>Time:</b> 3 PM - 6 PM <br><b>Venue:</b> [Insert Location]</p>
         
         <div id="countdown">Loading countdown...</div>
